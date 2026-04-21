@@ -7,6 +7,7 @@
 
   tasks:
   - name: taskbook variable
-    NAME: "Ravi"
+    vars:
+      NAME: "Ravi"
     ansible.builtin.debug:
       msg: "My Name Is: {{NAME}}, Age Is: {{AGE}}"
