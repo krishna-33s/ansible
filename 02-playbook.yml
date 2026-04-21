@@ -1,8 +1,17 @@
-- name: Hello World
-  #hosts: web
+- name: hello krishna
   hosts: local
   connection: local
+  
   tasks:
-  - name: print hello World
+  - name: print hello krishna
     ansible.builtin.debug:
-      msg: "Hello World!"
+      msg: "hello krishna!"
+
+
+- name: hello
+  hosts: web
+
+  tasks: 
+  - name: reply:hello
+    ansible.buitin.debug:
+      msg: "replied: hello"
