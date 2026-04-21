@@ -1,6 +1,6 @@
 - name: playbook variable
   hosts: local
-  connections: local
+  connection: local
   vars:  
     NAME: "krishna"
     AGE: "23"
