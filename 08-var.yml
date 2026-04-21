@@ -2,9 +2,10 @@
   hosts: local
   connection: local
 
+
   tasks:
   - name: taskbook variable
     vars:
       NAME: "Ravi"
     ansible.builtin.debug:
-      msg: "My Name Is: {{NAME}}, Age Is: {{AGE}}"
+      msg: "My Name Is: {{NAME}}"
