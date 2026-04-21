@@ -1,0 +1,11 @@
+- name: playbook variable
+  hosts: local
+  connections: local
+  NAME: "krishna"
+  AGE: "23"
+
+  tasks:
+  - name: taskbook variable
+    ansible.builtin.debug:
+      msg: (My Name Is:{{NAME}})
+      msg: (Age Is:{{AGE}})
