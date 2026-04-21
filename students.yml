@@ -1,0 +1,25 @@
+- name: "krishna"
+  age: "23"
+  addresses: 
+  - flat: "143"
+    city: "kurnool"
+    state: "A.P"
+    type: "perm"
+  - flat :"134"
+    city: "hyd"
+    state: "TS"
+    type: "current"
+
+- name: "akshay"
+  age: "23"
+  addresses: 
+  - flat: "143"
+    city: "warangal"
+    state: "TS"
+    type: "perm"
+  - flat :"134"
+    city: "hyd"
+    state: "TS"
+    type: "current"    
+
+

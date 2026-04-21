@@ -1,0 +1,42 @@
+{
+    "students": [
+        {
+            "name": "krishna",
+            "age": "23",
+
+            "addresses": [
+                {
+                    "type": "perm",
+                    "city": "kurnool",
+                    "state": "A.P"
+                },
+                {
+                    "type": "current",
+                    "city": "hyderabad",
+                    "state": "telangana"
+                }
+            ],
+            "skills": ["python","linux","html","sql"]
+        },
+        
+        {
+            "name": "ravi",
+            "age": "23",
+
+            "addresses": [
+                {
+                    "type": "perm",
+                    "city": "ongole",
+                    "state": "A.P"
+                },
+                {
+                    "type": "current",
+                    "city": "hyderabad",
+                    "state": "telangana"
+                }
+            ],
+            "skills": ["vlsi","linux","html","sql"]
+        }
+    ]
+
+}

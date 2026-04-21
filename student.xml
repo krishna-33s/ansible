@@ -1,0 +1,28 @@
+
+<students>
+    <student>
+        <name>krishna</name>
+        <age>23</age>
+        <status>unemployed</status>
+        <!-- <address>1-18,Kurnool,AndhraPradesh</address> -->
+        <!-- <address>
+            <flat-no>1-18</flat-no>
+            <city>kurnool</city>
+            <state>Andhra Pradesh</state>
+        </address> -->
+
+        <addresses>
+            <permadress>
+                <flat-no>1-18</flat-no>
+                <city>kurnool</city>
+                <state>Andhra Pradesh</state>
+            </permadress>
+
+            <currentaddress>
+                <flat-no>187</flat-no>
+                <city>hyderabad</city>
+                <state>Telangana</state>
+            </currentaddress>    
+        </addresses>
+    </student>
+</students>
