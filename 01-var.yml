@@ -1,8 +1,9 @@
 - name: playbook variable
   hosts: local
   connections: local
-  NAME: "krishna"
-  AGE: "23"
+  vars:  
+    NAME: "krishna"
+    AGE: "23"
 
   tasks:
   - name: taskbook variable
