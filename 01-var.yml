@@ -9,4 +9,5 @@
   - name: taskbook variable
     ansible.builtin.debug:
       msg: (My Name Is:{{NAME}})
+    ansible.builtin.debug:  
       msg: (Age Is:{{AGE}})
