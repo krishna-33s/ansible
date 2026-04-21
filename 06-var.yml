@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:  
-    data.yml
+  - data.yml
 
   tasks:
   - name: taskbook variable
