@@ -1,0 +1,16 @@
+- name: playbook variable
+  hosts: local
+  connection: local
+  vars_prompt:  
+  - name: username
+    prompt: pls enter username
+    private: false
+
+  - name: password
+    prompt: pls enter password
+    private: true
+
+  tasks:
+  - name: taskbook variable
+    ansible.builtin.debug:
+      msg: "my username is: {{username}}, my password is: {{password}}"
