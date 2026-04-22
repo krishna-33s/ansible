@@ -19,8 +19,8 @@
   tasks:
   - name: print data types
     ansible.builtin.debug:
-      msg: {{name}}
-      msg: {{age}}
-      msg: {{joining}}
-      msg: {{adress}}
-      msg: {{skills}}      
+      msg: {{ name }}
+      msg: {{ age }}
+      msg: {{ joining }}
+      msg: {{ adress }}
+      msg: {{ skills }}      
