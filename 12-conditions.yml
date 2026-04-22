@@ -9,10 +9,10 @@
 
   - name: redhat conditions
     ansible.builtin.debug:
-      msg: "Redhat family" 
-    when: ansible_facts.os_family == "Redhat"
+      msg: "This is a redhat package manger" 
+    when: ansible_facts.os_family == "RedHat"
 
   - name: debian conditions
     ansible.builtin.debug:
-      msg: "Debian family" 
+      msg: "This is a debian package manager" 
     when: ansible_facts.os_family == "Debian"     
