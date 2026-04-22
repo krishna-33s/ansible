@@ -8,5 +8,5 @@
     register: user_passwd
 
   -name: print output
-    ansible.builtin.debug:
-      msg: "{{ user_passwd }}"  
+   ansible.builtin.debug:
+    msg: "{{ user_passwd }}"  
