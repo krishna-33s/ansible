@@ -9,4 +9,4 @@
   - name: checking members count
     ansible.builtin.debug:
       msg: "one team"
-    when: teammembers < 16    
+    when: teammembers > 16   
