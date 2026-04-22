@@ -1,0 +1,26 @@
+- name: datatypes
+  hosts: local
+  connection: local
+
+  vars:
+    name: "krishna"
+    age: 23
+    joining: yes
+    address:
+      flat-no: 132
+      city: kurnool
+      state: Andhra Pradesh
+    skills:
+      -python
+      -html
+      -css
+      shelscript
+
+  tasks:
+  - name: print data types
+    ansible.builtin.debug:
+      msg: {{name}}
+      msg: {{age}}
+      msg: {{joining}}
+      msg: {{adress}}
+      msg: {{skills}}      
