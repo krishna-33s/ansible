@@ -1,9 +1,9 @@
-- name: playbook variable
+- name: inventory variable
   hosts: local
   connection: local
 
 
   tasks:
-  - name: taskbook variable
+  - name: print variable
     ansible.builtin.debug:
       msg: "My Name Is: {{NAME}}"

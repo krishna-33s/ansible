@@ -1,4 +1,4 @@
-- name: playbook variable
+- name: username and password
   hosts: local
   connection: local
   vars_prompt:  
@@ -11,6 +11,6 @@
     private: true
 
   tasks:
-  - name: taskbook variable
+  - name: print variable
     ansible.builtin.debug:
       msg: "my username is: {{username}}, my password is: {{password}}"
