@@ -3,7 +3,7 @@
   connection: local
 
   vars:
-    name: "krishna"
+    Name: "krishna"
     age: 23
     joining: yes
     address:
@@ -20,7 +20,7 @@
   - name: print data types
     ansible.builtin.debug:
       msg: |
-        name: {{name}}
+        Name: {{Name}}
         age: {{age}}
         joining: {{joining}}
         address: {{address}}
