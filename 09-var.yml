@@ -1,0 +1,7 @@
+- name: arguement priority
+  hosts: local
+  connection: local
+
+  tasks: 
+  -name: print variables from args
+    msg: "my course is : {{COURSE}}"
