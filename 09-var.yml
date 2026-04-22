@@ -4,4 +4,4 @@
 
   tasks: 
   -name: print variables from args
-    msg: "my course is : {{COURSE}}"
+    msg: "my course is : {{ COURSE }}"
