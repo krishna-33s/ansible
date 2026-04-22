@@ -4,9 +4,9 @@
 
   tasks:
   - name: shell
-    ansible.builtin.shell: cat /etc/password | grep root
+    ansible.builtin.command: echo "krishna"
     register: user_passwd
 
   - name: print output
     ansible.builtin.debug:
-      msg: "{{ user_passwd }}"  
+      msg: "{{ user_passwd }}"
