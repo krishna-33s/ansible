@@ -1,11 +1,11 @@
-- name: conditions
+- name: gathering facts
   hosts: local
   connection: local
 
   tasks: 
   - name: ansiblefacts 
     ansible.builtin.debug:
-      msg: "{{ansible_facts}}"
+      msg: "{{ ansible_facts }}"
 
   - name: redhat conditions
     ansible.builtin.debug:
