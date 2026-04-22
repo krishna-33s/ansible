@@ -1,0 +1,12 @@
+- name: conditions
+  hosts: local
+  connection: local
+
+  vars:
+    teammembers: 15
+
+  tasks:
+  - name: checking members count
+    ansible.builtin.debug:
+      msg: "one team"
+    when: teammembers < 16    
