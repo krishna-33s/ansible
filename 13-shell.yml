@@ -9,7 +9,7 @@
 
   - name: print output
     ansible.builtin.debug:
-      msg: "{{ listing }}"
+      msg: "{{ listing.stdout }}"
 
   - name: command
     ansible.builtin.command: mkdir -p file.txt
@@ -17,7 +17,7 @@
 
   - name: print root 
     ansible.builtin.debug:
-      msg: "{{ user_root }}"
+      msg: "{{ user_root.std.out }}"
 
   - name: add info to file
     ansible.builtin.shell: ls -ltr > file.txt
