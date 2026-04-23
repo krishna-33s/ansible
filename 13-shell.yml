@@ -3,7 +3,7 @@
   connection: local
 
   tasks:
-  - name: command
+  - name: shell
     ansible.builtin.shell: cat /etc/passwd | grep root
     register: listing
 
@@ -11,10 +11,10 @@
     ansible.builtin.debug:
       msg: "{{ listing }}"
 
-  # - name: command
-  #   ansible.builtin.shell:cat /etc/passwd | grep root
-  #   register: user_root
+  - name: command
+    ansible.builtin.command: mkdir file.txt
+    register: user_root
 
-  # - name: print root user_passwd
-  #   ansible.builtin.debug:
-  #     msg: "{{ user_root }}"
+  - name: print root 
+    ansible.builtin.debug:
+      msg: "{{ user_root }}"
