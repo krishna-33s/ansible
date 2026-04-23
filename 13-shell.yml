@@ -4,17 +4,17 @@
 
   tasks:
   - name: command
-    ansible.builtin.command: echo "krishna"
+    ansible.builtin.command: cat /etc/passwd | grep root
     register: printing
 
   - name: print output
     ansible.builtin.debug:
       msg: "{{ user_passwd }}"
 
-  - name: command
-    ansible.builtin.shell:cat /etc/passwd | grep root
-    register: user_root
+  # - name: command
+  #   ansible.builtin.shell:cat /etc/passwd | grep root
+  #   register: user_root
 
-  - name: print root user_passwd
-    ansible.builtin.debug:
-      msg: "{{ user_root }}"
+  # - name: print root user_passwd
+  #   ansible.builtin.debug:
+  #     msg: "{{ user_root }}"
