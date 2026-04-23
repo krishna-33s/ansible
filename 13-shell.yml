@@ -17,7 +17,7 @@
 
   - name: print root 
     ansible.builtin.debug:
-      msg: "{{ user_root.std.out }}"
+      msg: "{{ user_root.stdout }}"
 
   - name: add info to file
     ansible.builtin.shell: ls -ltr > file.txt
