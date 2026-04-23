@@ -4,7 +4,7 @@
 
   tasks:
   - name: command
-    ansible.builtin.command: ls -l
+    ansible.builtin.shell: cat etc/passwd | grep root
     register: listing
 
   - name: print output
