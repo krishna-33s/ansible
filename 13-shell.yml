@@ -12,7 +12,7 @@
       msg: "{{ user_passwd }}"
 
   - name: command
-    ansible.builtin.shell: /etc/passwd | grep root
+    ansible.builtin.shell:cat /etc/passwd | grep root
     register: user_root
 
   - name: print root user_passwd
