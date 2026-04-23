@@ -20,7 +20,7 @@
       msg: "{{ user_root.stdout }}"
 
   - name: add info to file
-    ansible.builtin.shell: ls -ltr > file.txt
+    ansible.builtin.shell: ls -ltr > file1.txt
     register: adding
 
   - name: print added files
