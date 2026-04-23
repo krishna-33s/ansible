@@ -5,11 +5,11 @@
   tasks:
   - name: command
     ansible.builtin.command: ls -l
-    register: printing
+    register: listing
 
   - name: print output
     ansible.builtin.debug:
-      msg: "{{ user_passwd }}"
+      msg: "{{ listing }}"
 
   # - name: command
   #   ansible.builtin.shell:cat /etc/passwd | grep root
