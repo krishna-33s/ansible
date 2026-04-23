@@ -12,7 +12,7 @@
       msg: "{{ listing }}"
 
   - name: command
-    ansible.builtin.command: mkdir file.txt
+    ansible.builtin.command: mkdir -p file.txt
     register: user_root
 
   - name: print root 
