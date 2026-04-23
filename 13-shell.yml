@@ -25,4 +25,4 @@
 
   - name: print added files
     ansible.builtin.debug:
-      msg: "{{ adding.stderr }}"       
+      msg: "{{ adding }}"       
