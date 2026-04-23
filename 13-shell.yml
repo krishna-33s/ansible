@@ -18,3 +18,11 @@
   - name: print root 
     ansible.builtin.debug:
       msg: "{{ user_root }}"
+
+  - name: add info to file
+    ansible.builtin.shell: ls -ltr > file.txt
+    register: adding
+
+  - name: print added files
+    ansible.builtin.debug:
+      msg: "{{ adding }}"       
