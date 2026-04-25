@@ -60,4 +60,4 @@
 
   - name: cheking valid my_id
     ansible.builtin.debug:
-      msg: "{{ my_id | ansible.util.ipv4 }}"            
+      msg: "{{ my_id | ansible.utils.ipv4 }}"            
