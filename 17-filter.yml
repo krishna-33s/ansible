@@ -3,7 +3,7 @@
   connection: local
   vars:
     student: "KrishnA"
-    my_id: "200.23.21.433"
+    my_id: "196.23.21.33"
     skills: python, ansible, linux, shell
     tagsMap:
       name: project
