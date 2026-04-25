@@ -1,4 +1,4 @@
-- name: error handling
+- name: errorhandling
   hosts: local
   connection: local
   become: true
