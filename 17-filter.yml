@@ -13,4 +13,4 @@
 
   - name: string to listing
     ansible.builtin.debug:
-      msg: " skills | split ','"
+      msg: "{{ skills | split(',') }}"
