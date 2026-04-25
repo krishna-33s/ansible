@@ -4,7 +4,7 @@
 
   tasks:
   - name: print loops
-    ansible.builtindebug:
+    ansible.builtin.debug:
       msg: "hii this is {{ item }}"
 
     loop:
