@@ -2,26 +2,26 @@
   hosts: local
   connection: local
   vars:
-   skills: python, ansible, linux, shell
-   tagsMap:
-    name: project
-    tools: ansible
-    projectname: roboshop
-   tagsList:
-     [
-        {
-            "key": "name",
-            "value": "project"
-        },
-        {
-            "key": "tools",
-            "value": "ansible"
-        },
-        {
-            "key": "projectname",
-            "value": "roboshop"
-        }
-    ]
+    skills: python, ansible, linux, shell
+    tagsMap:
+      name: project
+      tools: ansible
+      projectname: roboshop
+    tagsList:
+      [
+          {
+              "key": "name",
+              "value": "project"
+          },
+          {
+              "key": "tools",
+              "value": "ansible"
+          },
+          {
+              "key": "projectname",
+              "value": "roboshop"
+          }
+      ]
 
   tasks:
   - name: default printing
