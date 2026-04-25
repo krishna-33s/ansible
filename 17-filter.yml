@@ -3,8 +3,10 @@
   connection: local
   vars:
    skills: python, ansible, linux, shell
-
-  
+  tagMap:
+    name: project
+    tools: ansible
+    projectname: roboshop
 
   tasks:
   - name: default printing
@@ -14,3 +16,7 @@
   - name: string to listing
     ansible.builtin.debug:
       msg: "{{ skills | split(',') }}"
+
+  - name: map to listing
+    ansible.builtin.debug:
+      msg: "{{ tagMap | dict2items }}"    
