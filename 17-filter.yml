@@ -1,0 +1,8 @@
+- name: demo on filters
+  hosts: local
+  connection: local
+
+  tasks:
+  - name: default printing
+    ansible.builtin.debug:
+      msg: " hii this is {{ wishes }}"  
