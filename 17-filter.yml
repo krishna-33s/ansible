@@ -3,7 +3,7 @@
   connection: local
   vars:
    skills: python, ansible, linux, shell
-  tagMap:
+   tagMap:
     name: project
     tools: ansible
     projectname: roboshop
