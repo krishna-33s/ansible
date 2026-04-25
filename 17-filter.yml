@@ -39,3 +39,8 @@
   - name: list to map
     ansible.builtin.debug:
       msg: "{{ tagsList | items2dict}}"
+
+  - name: yaml to json
+    ansible.builtin.debug:
+     candidate.yml: "{{ lookup( 'file' ),'students.yml' | from yaml}}"
+         
