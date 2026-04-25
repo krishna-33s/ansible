@@ -10,5 +10,5 @@
       state: present
 
     loop:
-      - mysql
-      - nginx   
+    - mysql
+    - nginx   
