@@ -42,7 +42,7 @@
 
   - name: yaml to json
     ansible.builtin.set_up:
-      candidate.yml: "{{ lookup( 'file' ,'students.yml' ) | from_yaml }}"
+      candidate.yml: "{{ lookup('file', 'students.yml' ) | from_yaml }}"
 
   - name: print json file
     ansible.builtin.debug:
