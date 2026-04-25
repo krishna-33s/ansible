@@ -3,6 +3,7 @@
   connection: local
   vars:
     student: "KrishnA"
+    my_id: "200.23.21.433"
     skills: python, ansible, linux, shell
     tagsMap:
       name: project
@@ -55,4 +56,8 @@
 
   - name: lowercase
     ansible.builtin.debug:
-      msg: "{{ student | lower }}"          
+      msg: "{{ student | lower }}"
+
+  - name: cheking valid my_id
+    ansible.builtin.debug:
+      msg: "{{ my_id | ansible.util.ipv4 }}"            
