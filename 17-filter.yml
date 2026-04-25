@@ -4,14 +4,13 @@
   vars:
    skills: python, ansible, linux, shell
 
+  
+
   tasks:
   - name: default printing
     ansible.builtin.debug:
       msg: " hii this is {{ introduce | default('harini')}}"  
 
-  - name: loop
+  - name: string to listing
     ansible.builtin.debug:
-      msg: "this are my skills: {{ item }}"
-
-    loop: 
-    - skills      
+      msg: " skills | split ','"
