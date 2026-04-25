@@ -2,6 +2,7 @@
   hosts: local
   connection: local
   vars:
+    name: "KrishnA"
     skills: python, ansible, linux, shell
     tagsMap:
       name: project
@@ -47,3 +48,7 @@
   - name: print json file
     ansible.builtin.debug:
       msg: "{{ candidate_yml | to_nice_json }}"       
+
+  - name: uppercase
+    ansible.builtin.debug:
+      msg: "{{ name | upper}}"    
