@@ -46,4 +46,4 @@
 
   - name: print json file
     ansible.builtin.debug:
-      msg: {{ candidate.yml | nice_to_json }}       
+      msg: "{{ candidate.yml | to_nice_json }}"       
