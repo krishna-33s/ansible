@@ -6,7 +6,7 @@
   tasks:
   - name: installed
     ansible.builtin.package:
-      msg: {{item}}
+      msg: {{ item }}
       state: present
 
     loop:
