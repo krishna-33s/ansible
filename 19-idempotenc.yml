@@ -1,0 +1,9 @@
+- name: idempotency
+  hosts: local
+  connection: local
+  become: yes
+
+  tasks:
+  - name: useradding
+    ansible.builtin.user:
+      name: hari
