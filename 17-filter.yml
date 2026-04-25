@@ -42,8 +42,8 @@
 
   - name: read student file
     ansible.builtin.set_fact:
-      candidate.yml: "{{ lookup('file', 'students.yml' ) | from_yaml }}"
+      candidate_yml: "{{ lookup('file', 'students.yml' ) | from_yaml }}"
 
   - name: print json file
     ansible.builtin.debug:
-      msg: "{{ candidate.yml | to_nice_json }}"       
+      msg: "{{ candidate_yml | to_nice_json }}"       
