@@ -3,10 +3,25 @@
   connection: local
   vars:
    skills: python, ansible, linux, shell
-   tagMap:
+   tagsMap:
     name: project
     tools: ansible
     projectname: roboshop
+   tagsList:
+     [
+        {
+            "key": "name",
+            "value": "project"
+        },
+        {
+            "key": "tools",
+            "value": "ansible"
+        },
+        {
+            "key": "projectname",
+            "value": "roboshop"
+        }
+    ]
 
   tasks:
   - name: default printing
@@ -19,4 +34,8 @@
 
   - name: map to listing
     ansible.builtin.debug:
-      msg: "{{ tagMap | dict2items }}"    
+      msg: "{{ tagsMap | dict2items }}"
+
+  - name: list to map
+    ansible.builtin.debug:
+      msg: "{{ tagsList | items2dict}}"
