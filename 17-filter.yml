@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    name: "KrishnA"
+    student: "KrishnA"
     skills: python, ansible, linux, shell
     tagsMap:
       name: project
@@ -51,4 +51,8 @@
 
   - name: uppercase
     ansible.builtin.debug:
-      msg: "{{ name | upper}}"    
+      msg: "{{ student | upper }}" 
+
+  - name: lowercase
+    ansible.builtin.debug:
+      msg: "{{ student | lower }}"          
