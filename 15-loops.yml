@@ -21,8 +21,9 @@
   - name: install package
     ansible.builtin.package:
       name: "{{ item }}"
-      state: present
+      state: absent
     loop:
     - mysql
     - nginx
     - zip
+  
