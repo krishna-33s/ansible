@@ -6,6 +6,7 @@
   - name: adding user
     ansible.builtin.command: id roboshop
     register: user_creation
+    ignore_errors: true
 
   - name: user output
     ansible.builtin.debug:
